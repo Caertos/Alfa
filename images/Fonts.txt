@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Satisfy
+Author: Sideshow
+Url: https://fonts.google.com/specimen/Satisfy
+
+Font: Open Sans
+Author: Steve Matteson
+Url: https://fonts.google.com/specimen/Open+Sans
