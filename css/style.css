@@ -136,6 +136,10 @@ a {
      outline: none !important;
 }
 
+.banner_section {
+    min-height: 500px;
+}
+
 a,
 .btn {
      text-decoration: none !important;
@@ -613,7 +617,7 @@ body{
 	font-size: 1em;
     border-radius: 25px;
     opacity: 0;
-    transform: translateY(23rem);
+    transform: translateY(15rem);
     transition: 1.2s;
  }
 
