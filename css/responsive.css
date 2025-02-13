@@ -473,4 +473,10 @@ ul.link li {
 .about-img { margin-left: 0px;}
 .new_bt { margin-left: 0px; width: 33%;}
 .about-img2 { margin-left: 0px;}
+
+    .container, .row, .col-sm-3, .col-sm-9, .navbar, .navbar-nav, .nav-item, .nav-link {
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
 }

@@ -44,81 +44,49 @@
   <body class="main-layout">
     <!--Encabezado inicio-->
     <div class="header_section">
-    <div id="navbar-placeholder"></div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        fetch("./components/navbar.html")
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById("navbar-placeholder").innerHTML = data;
-          });
-      });
-    </script>
-    <div id="header-placeholder"></div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        $("#header-placeholder").load("./components/bannersection.html");
-      });
-    </script>
+      <div id="navbar-placeholder"></div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          fetch("./components/navbar.html")
+            .then((response) => response.text())
+            .then((data) => {
+              document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+        });
+      </script>
+      <div id="header-placeholder"></div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          $("#header-placeholder").load("./components/bannersection.html");
+        });
+      </script>
     </div>
     <!--Encabezado fin-->
 
-        <!-- nueva colección sección inicio -->
-          <div>
-            <img src="images/publicity.jpg" alt="">
-        </div>
-        <!-- nueva colección sección fin -->
+    <!-- nueva colección sección inicio -->
+    <div>
+      <img src="images/publicity.jpg" alt="" />
+    </div>
+    <!-- nueva colección sección fin -->
 
     <!-- sección de productos inicio -->
-    <div id="product-section-placeholder"></div>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("./components/productsection.html")
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById("product-section-placeholder").innerHTML = data;
-          });
-      });
-    </script>
-    <!-- sección de productos fin -->
-
-    <div class="container">
-      <h1 class="new_text"><strong>Fundas de Celulares</strong></h1>
-      <p class="consectetur_text">
-        Encuentra las mejores fundas para proteger y personalizar tu celular.
-        Variedad de estilos y materiales.
-      </p>
-    </div>
-    <div class="collectipn_section_3 layuot_padding">
-      <div class="container">
-        <div class="racing_phone">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="phone-img3"><img src="images/case2.png" /></div>
-            </div>
-            <div class="col-md-4">
-              <div class="sale_text">
-                <strong>
-                  Venta <br /><span style="color: #0a0506">FUNDAS</span>
-                  <br />PARA
-                </strong>
-              </div>
-              <div class="number_text">
-                <strong>$ <span style="color: #0a0506">25</span></strong>
-              </div>
-              <button class="seemore">Ver Más</button>
-            </div>
-          </div>
+      <div class="layout_padding gallery_section" id="product-container"></div>
+        <div class="container">
+          <h1 class="new_text"><strong>Nuevos Productos</strong></h1>
+          <p class="consectetur_text">
+            Descubre los últimos lanzamientos en celulares, fundas y accesorios.
+            Innovación y tecnología a tu alcance.
+          </p>
+          <script src="./components/productsection.js"></script>
         </div>
-      </div>
-    </div>
+    <!-- sección de productos fin -->
 
     <!-- sección de pie de página inicio -->
     <div id="footer-placeholder"></div>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            $("#footer-placeholder").load("./components/footer.html");
-        });
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#footer-placeholder").load("./components/footer.html");
+      });
     </script>
     <!-- sección de pie de página fin -->
 
