@@ -38,7 +38,7 @@ body {
      font-family: Poppins;
      line-height: 1.80857;
      font-weight: normal;
-     overflow-x: hidden;
+     overflow-x: hidden; /* Asegúrate de que el desbordamiento horizontal esté oculto */
 }
 
 a {
@@ -137,8 +137,8 @@ a {
 }
 
 .banner_section {
-    min-height: 500px;
-    margin: 0px
+    margin: 0px;
+    padding: 0px;
 }
 
 a,
@@ -216,16 +216,6 @@ button {
      padding-bottom: 90px;
 }
 
-.header_section{
-	width: 100%;
-	float: left;
-	background-image: url(../images/banner.jpg);
-	height: auto;
-	padding: 20px 0px;
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-
 .padding_0{ width: 100%; float: left; }
 
 .mens_taital{ width: 100%; float: left; color: #908d92; font-size: 14pt; }
@@ -238,7 +228,7 @@ button {
 }
 .page_no {
     width: 28%;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     text-align: center;
     color: #ffffff;
     border: 2px solid #8d8791;
@@ -264,15 +254,6 @@ button {
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.9rem;
     padding-left: 1.6rem;
-}
-
-	
-.last{ padding-left: 30px !important; }
-.banner_text{
-	width: 100%;
-	float: left;
-	font-size: 30pt;
-	color: #CFCFCF;
 }
 
 .mens_text{
@@ -910,4 +891,9 @@ a:hover {
     width: 100%;
     height: auto;
     background: #0c0116;
+}
+
+.publicity_section {
+    margin: 0px;
+    padding: 0px; /* Asegúrate de que no haya padding adicional */
 }

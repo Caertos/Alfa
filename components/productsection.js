@@ -24,7 +24,6 @@
             "El iPhone 16 Pro viene con una cámara revolucionaria, pantalla Super Retina XDR y un rendimiento sin igual.",
           link: "product.html",
         },
-        // Segunda fila (reutilizando los mismos datos)
         {
           image: "images/HuaweiP50.png",
           title: "Huawei P50",
@@ -51,7 +50,6 @@
         },
       ];
 
-      // Creamos el contenedor principal
       const productcontainer = document.getElementById("product-container");
       if (productcontainer) {
         const container = document.createElement("div");
