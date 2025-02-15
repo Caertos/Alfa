@@ -499,6 +499,7 @@ pre code {
 }
 .container {
   width: 100%;
+  padding: 2%;
   margin-right: auto;
   margin-left: auto;
 }

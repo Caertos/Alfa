@@ -218,9 +218,6 @@
   .star_icon {
     width: 30%;
   }
-  .footer-logo {
-    font-size: 10pt;
-  }
   .map_text {
     padding-left: 9px;
   }
@@ -616,7 +613,7 @@
     margin-top: 20px;
   }
   .footer-logo {
-    padding-top: 20px;
+    padding-top: 0;
   }
   .mail_section li {
     padding-top: 20px;

@@ -135,8 +135,7 @@ a {
 }
 
 .banner_section {
-  margin: 0px;
-  padding: 0px;
+  overflow: hidden;
 }
 
 a,
@@ -623,6 +622,8 @@ body {
 .phone_price {
   position: absolute;
   border: 2px;
+  width: auto;
+  max-width: 50%;
   font-weight: 500;
   transform: translateY(19rem);
   z-index: 2;
@@ -632,6 +633,7 @@ body {
   text-align: justify;
   transform: translateY(23rem);
   z-index: 2;
+
 }
 
 .buy_phone {
@@ -793,14 +795,14 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-.main_bt {
+/* .main_bt {
   background: #7ad01e;
   border: none;
   width: 170px;
   height: 58px;
   font-size: 26px;
   color: #ffffff;
-}
+} */
 .ram {
   width: 100%;
   float: left;
