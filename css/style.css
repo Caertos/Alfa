@@ -685,19 +685,19 @@ body {
 }
 
 .best_phone:hover .phone_description {
-  transform: translateY(10rem);
+  transform: translateY(350%);
 }
 
 .best_phone:hover .phone-img {
-  transform: translateY(-5rem);
+  transform: translateY(-50%);
 }
 
 .best_phone:hover .phone_title {
-  transform: translateY(7rem);
+  transform: translateY(280%);
 }
 
 .best_phone:hover .phone_price {
-  transform: translateY(8rem);
+  transform: translateY(250%);
 }
 
 .best_phone:hover .buy_phone {
