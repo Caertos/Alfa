@@ -44,27 +44,27 @@
   <body>
     <!--Encabezado inicio-->
 
-      <div id="navbar-placeholder"></div>
-      <div id="banner-placeholder" style="background-color: black;"></div>
+    <div id="navbar-placeholder"></div>
+    <div id="banner-placeholder" style="background-color: black"></div>
 
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          fetch("./components/navbar.html")
-            .then((response) => response.text())
-            .then((data) => {
-              document.getElementById("navbar-placeholder").innerHTML = data;
-            });
-        });
-      </script>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          fetch("./components/bannersection.html")
-            .then((response) => response.text())
-            .then((data) => {
-              document.getElementById("banner-placeholder").innerHTML = data;
-            });
-        });
-      </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("./components/navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar-placeholder").innerHTML = data;
+          });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("./components/bannersection.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("banner-placeholder").innerHTML = data;
+          });
+      });
+    </script>
 
     <!--Encabezado fin-->
 
@@ -75,14 +75,16 @@
     <!-- nueva colección sección fin -->
 
     <!-- sección de productos inicio -->
-    <div class="pt-5 gallery_section" id="product-container"></div>
+    <script src="./components/productsection.js"></script>
+    <div class="pt-5 gallery_section">
+      <!-- Contenedor para los productos -->
+      <div id="product-container"></div>
+      <!-- Contenedor para la paginación -->
+      <div id="pagination" class="container text-center my-4"></div>
+    </div>
+
     <div class="container">
-      <h1 class="new_text"><strong>Nuevos Productos</strong></h1>
-      <p class="consectetur_text">
-        Descubre los últimos lanzamientos en celulares, fundas y accesorios.
-        Innovación y tecnología a tu alcance.
-      </p>
-      <script src="./components/productsection.js"></script>
+      <h1 class="new_text"><strong>Categorías</strong></h1>
     </div>
     <!-- sección de productos fin -->
 
