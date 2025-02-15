@@ -612,7 +612,7 @@ body {
 }
 
 .phone_title {
-  font-size: 1.5rem;
+  font-size: 100%;
   position: absolute;
   text-align: left;
   transform: translateY(17rem);
@@ -633,7 +633,7 @@ body {
   text-align: justify;
   transform: translateY(23rem);
   z-index: 2;
-
+  font-size: 75%;
 }
 
 .buy_phone {

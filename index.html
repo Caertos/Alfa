@@ -75,7 +75,6 @@
     <!-- nueva colección sección fin -->
 
     <!-- sección de productos inicio -->
-    <script src="./components/productsection.js"></script>
     <div class="pt-5 gallery_section">
       <!-- Contenedor para los productos -->
       <div id="product-container"></div>
@@ -83,9 +82,30 @@
       <div id="pagination" class="container text-center py-0 pb-3"></div>
     </div>
 
-    <div class="container">
+    <div class="container" id="filter-panel">
       <h1 class="new_text"><strong>Categorías</strong></h1>
+      <div class="filters">
+        <select id="categoryFilter" class="form-control mb-2">
+          <option value="all">Todas las Categorías</option>
+          <option value="celulares">Celulares</option>
+          <option value="accesorios">Accesorios</option>
+          <option value="cargadores">Cargadores</option>
+        </select>
+        <!-- Dropdown de marcas: se muestra solo si se selecciona "celulares" -->
+        <select
+          id="brandFilter"
+          class="form-control mb-2"
+          style="display: none"
+        >
+          <!-- Se poblará dinámicamente -->
+        </select>
+        <select id="priceSort" class="form-control">
+          <option value="asc">Precio: Menor a Mayor</option>
+          <option value="desc">Precio: Mayor a Menor</option>
+        </select>
+      </div>
     </div>
+        <script src="./components/productsection.js"></script>
     <!-- sección de productos fin -->
 
     <!-- sección de pie de página inicio -->
@@ -102,7 +122,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/plugin.js"></script>
+<!--     <script src="js/plugin.js"></script> -->
     <!-- barra lateral -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
