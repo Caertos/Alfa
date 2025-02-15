@@ -41,11 +41,11 @@
     ><![endif]-->
   </head>
   <!-- cuerpo -->
-  <body class="main-layout">
+  <body>
     <!--Encabezado inicio-->
 
       <div id="navbar-placeholder"></div>
-      <div id="banner-placeholder"></div>
+      <div id="banner-placeholder" style="background-color: black;"></div>
 
       <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -69,13 +69,13 @@
     <!--Encabezado fin-->
 
     <!-- nueva colección sección inicio -->
-    <div class="p-0 m-0 publicity_section">
+    <div class="img-fluid">
       <img src="images/publicity.jpg" alt="" />
     </div>
     <!-- nueva colección sección fin -->
 
     <!-- sección de productos inicio -->
-    <div class="layout_padding gallery_section" id="product-container"></div>
+    <div class="pt-5 gallery_section" id="product-container"></div>
     <div class="container">
       <h1 class="new_text"><strong>Nuevos Productos</strong></h1>
       <p class="consectetur_text">
@@ -105,36 +105,6 @@
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
     <!-- javascript -->
-    <script src="js/owl.carousel.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".fancybox").fancybox({
-          openEffect: "none",
-          closeEffect: "none",
-        });
-
-        $("#myCarousel").carousel({
-          interval: false,
-        });
-
-        //scroll slides on swipe for touch enabled devices
-
-        $("#myCarousel").on("touchstart", function (event) {
-          var yClick = event.originalEvent.touches[0].pageY;
-          $(this).one("touchmove", function (event) {
-            var yMove = event.originalEvent.touches[0].pageY;
-            if (Math.floor(yClick - yMove) > 1) {
-              $(".carousel").carousel("next");
-            } else if (Math.floor(yClick - yMove) < -1) {
-              $(".carousel").carousel("prev");
-            }
-          });
-          $(".carousel").on("touchend", function () {
-            $(this).off("touchmove");
-          });
-        });
-      });
-    </script>
   </body>
 </html>
