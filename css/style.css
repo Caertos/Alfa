@@ -669,11 +669,6 @@ body {
     padding: 0.5rem;
   }
   
-  .page-btn.active {
-    background-color: #007bff;
-    border-color: #007bff;
-  }
-
 .buy_phone:hover {
   background-color: #ffffff;
   color: #7ad01e;
