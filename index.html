@@ -54,10 +54,7 @@
           .then((data) => {
             document.getElementById("navbar-placeholder").innerHTML = data;
           });
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
+
         fetch("./components/bannersection.html")
           .then((response) => response.text())
           .then((data) => {

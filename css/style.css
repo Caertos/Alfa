@@ -23,7 +23,6 @@
 
 * {
   box-sizing: border-box !important;
-  transition: ease all 0.5s;
 }
 
 html {
@@ -126,12 +125,6 @@ p {
   font-weight: 300;
   font-size: 15px;
   line-height: 24px;
-}
-
-a {
-  color: #222222;
-  text-decoration: none;
-  outline: none !important;
 }
 
 .banner_section {
@@ -1437,13 +1430,6 @@ a:hover {
   padding: 10px 0px;
   background-color: #7ad01e;
   font-family: Poppins;
-}
-
-.copyright a {
-  color: #ffffff;
-}
-.copyright a:hover {
-  color: #000;
 }
 
 .map_text {
