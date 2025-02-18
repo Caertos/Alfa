@@ -79,7 +79,7 @@
       <!-- Contenedor para los productos -->
       <div id="product-container"></div>
       <!-- Contenedor para la paginación -->
-      <div id="pagination" class="container text-center py-0"></div>
+      <div id="pagination" class="container text-center"></div>
     </div>
 
     <div class="container" id="filter-panel">
@@ -105,7 +105,7 @@
         </select>
       </div>
     </div>
-        <script src="./components/productsection.js"></script>
+    <script src="./components/productsection.js"></script>
     <!-- sección de productos fin -->
 
     <!-- sección de pie de página inicio -->
@@ -122,13 +122,18 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
-<!--     <script src="js/plugin.js"></script> -->
+    <!--     <script src="js/plugin.js"></script> -->
     <!-- barra lateral -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
     <!-- javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <!-- Controlador del hover en pantallas tactiles -->
-     <script src="js/hoverHandler.js"></script>
+    <script type="module">
+      import { hoverHandler } from "./js/hoverHandler.js";
+      document.addEventListener("DOMContentLoaded", () => {
+        hoverHandler();
+      });
+    </script>
   </body>
 </html>

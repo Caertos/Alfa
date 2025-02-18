@@ -356,16 +356,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     productsToDisplay.forEach((product) => {
       const col = document.createElement("div");
-      col.className = "col-sm-12 col-lg-4 mb-2";
+      col.className = "col-sm-12 col-md-6 col-lg-3 mb-2";
       row.appendChild(col);
 
       const bestPhoneDiv = document.createElement("div");
-      bestPhoneDiv.className = "container noselect";
+      bestPhoneDiv.className = "containerCard noselect";
+      bestPhoneDiv.dataset.link = product.link;
       col.appendChild(bestPhoneDiv);
 
       const canvas = document.createElement("div");
       canvas.className = "canvas";
-      canvas.style = "border: 2px red solid"
       bestPhoneDiv.appendChild(canvas);
 
       for (let i = 1; i <= 9; i++) {
@@ -376,8 +376,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const card = document.createElement("div");
       card.id = "card";
-      card.classList.add("card");
-      card.setAttribute("data-link", product.link);
 
       const cardContent = document.createElement("div");
       cardContent.className = "card-content";
