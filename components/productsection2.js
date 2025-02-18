@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Huawei P50",
       price: "300000",
       description:
-        "Camara: frontal (13 MP), posterior (50 MP)\nProcesador: Snapdragon 888\nRAM: 8 GB\nPantalla: 6.5 pulgadas OLED\nBateria: 4100 mAh",
-      link: "https://www.google.com",
+        "El Huawei P50 cuenta con una cámara avanzada, pantalla OLED y un rendimiento excepcional.",
+      link: "product.html",
       category: "celulares",
       brand: "Huawei",
     },
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Samsung S21",
       price: "250000",
       description:
-        "Camara: frontal (10 MP), posterior (64 MP + 12 MP + 12 MP)\nProcesador: Exynos 2100\nRAM: 8 GB\nPantalla: 6.2 pulgadas Dynamic AMOLED\nBateria: 4000 mAh",
+        "El Samsung S21 ofrece una gran experiencia de cámara, pantalla Dynamic AMOLED y un rendimiento potente.",
       link: "product.html",
       category: "celulares",
       brand: "Samsung",
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "iPhone 16 Pro",
       price: "400000",
       description:
-        "Camara: frontal (12 MP), posterior (48 MP + 12 MP + 12 MP)\nProcesador: A17 Bionic\nRAM: 6 GB\nPantalla: 6.1 pulgadas Super Retina XDR\nBateria: 3200 mAh",
+        "El iPhone 16 Pro viene con una cámara revolucionaria, pantalla Super Retina XDR y un rendimiento sin igual.",
       link: "product.html",
       category: "celulares",
       brand: "Apple",
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Huawei P50 Plus",
       price: "320000",
       description:
-        "Camara: frontal (13 MP), posterior (64 MP + 50 MP + 40 MP)\nProcesador: Snapdragon 888\nRAM: 8 GB\nPantalla: 6.6 pulgadas OLED\nBateria: 4360 mAh",
+        "La versión Plus del Huawei P50 mejora la cámara y el rendimiento general.",
       link: "product.html",
       category: "celulares",
       brand: "Huawei",
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Samsung S21 Ultra",
       price: "280000",
       description:
-        "Camara: frontal (40 MP), posterior (108 MP + 10 MP + 10 MP + 12 MP)\nProcesador: Exynos 2100\nRAM: 12 GB\nPantalla: 6.8 pulgadas Dynamic AMOLED\nBateria: 5000 mAh",
+        "El Samsung S21 Ultra destaca por su sistema de cámaras y gran pantalla.",
       link: "product.html",
       category: "celulares",
       brand: "Samsung",
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "iPhone 16 Pro Max",
       price: "450000",
       description:
-        "Camara: frontal (12 MP), posterior (48 MP + 12 MP + 12 MP)\nProcesador: A17 Bionic\nRAM: 6 GB\nPantalla: 6.7 pulgadas Super Retina XDR\nBateria: 4352 mAh",
+        "El iPhone 16 Pro Max ofrece una experiencia premium y excelente calidad en cámara.",
       link: "product.html",
       category: "celulares",
       brand: "Apple",
@@ -65,11 +65,142 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Huawei P50 Lite",
       price: "180000",
       description:
-        "Camara: frontal (16 MP), posterior (64 MP + 8 MP + 2 MP)\nProcesador: Kirin 820E\nRAM: 6 GB\nPantalla: 6.4 pulgadas LCD\nBateria: 4200 mAh",
+        "El Huawei P50 Lite es una opción económica con buenas prestaciones.",
       link: "product.html",
       category: "celulares",
       brand: "Huawei",
     },
+    {
+      image: "images/SamsungS21.png",
+      title: "Samsung S21 FE",
+      price: "230000",
+      description:
+        "El Samsung S21 FE equilibra precio y rendimiento, ideal para el día a día.",
+      link: "product.html",
+      category: "celulares",
+      brand: "Samsung",
+    },
+    {
+      image: "images/Iphone16Pro.png",
+      title: "iPhone 16",
+      price: "350000",
+      description:
+        "El iPhone 16 mejora la eficiencia y la experiencia del usuario en general.",
+      link: "product.html",
+      category: "celulares",
+      brand: "Apple",
+    },
+    {
+      image: "images/HuaweiP50.png",
+      title: "Huawei P50 Nova",
+      price: "310000",
+      description:
+        "El Huawei P50 Nova combina un diseño elegante con buena cámara.",
+      link: "product.html",
+      category: "celulares",
+      brand: "Huawei",
+    },
+    {
+      image: "images/SamsungS21.png",
+      title: "Samsung S21 Plus",
+      price: "270000",
+      description:
+        "El Samsung S21 Plus es ideal para quienes buscan calidad premium a un precio razonable.",
+      link: "product.html",
+      category: "celulares",
+      brand: "Samsung",
+    },
+    {
+      image: "images/Iphone16Pro.png",
+      title: "iPhone 16 Edge",
+      price: "360000",
+      description:
+        "El iPhone 16 Edge tiene un diseño innovador con bordes curvos y gran rendimiento.",
+      link: "product.html",
+      category: "celulares",
+      brand: "Apple",
+    },
+    {
+      image: "images/HuaweiP50.png",
+      title: "Huawei P50 Ultra",
+      price: "330000",
+      description:
+        "El Huawei P50 Ultra ofrece un rendimiento superior y excelentes capacidades de cámara.",
+      link: "product.html",
+      category: "celulares",
+      brand: "Huawei",
+    },
+    {
+      image: "images/SamsungS21.png",
+      title: "Samsung S21 Mini",
+      price: "240000",
+      description:
+        "El Samsung S21 Mini es compacto y potente, ideal para quienes buscan un dispositivo pequeño.",
+      link: "product.html",
+      category: "celulares",
+      brand: "Samsung",
+    },
+    {
+      image: "images/Iphone16Pro.png",
+      title: "iPhone 16 SE",
+      price: "310000",
+      description:
+        "El iPhone 16 SE combina rendimiento y precio accesible, ideal para usuarios exigentes.",
+      link: "product.html",
+      category: "celulares",
+      brand: "Apple",
+    },
+    {
+      image: "images/HuaweiP50.png",
+      title: "Huawei P50 Standard",
+      price: "290000",
+      description:
+        "El Huawei P50 Standard es una excelente opción con un balance entre prestaciones y precio.",
+      link: "product.html",
+      category: "celulares",
+      brand: "Huawei",
+    },
+    {
+      image: "images/SamsungS21.png",
+      title: "Samsung S21 Classic",
+      price: "260000",
+      description:
+        "El Samsung S21 Classic mantiene la calidad y el rendimiento característicos de la serie.",
+      link: "product.html",
+      category: "celulares",
+      brand: "Samsung",
+    },
+    {
+      image: "images/Iphone16Pro.png",
+      title: "iPhone 16 Plus",
+      price: "380000",
+      description:
+        "El iPhone 16 Plus mejora aspectos del rendimiento y la cámara en comparación con versiones anteriores.",
+      link: "product.html",
+      category: "celulares",
+      brand: "Apple",
+    },
+    {
+      image: "images/HuaweiP50.png",
+      title: "Huawei P50 Eco",
+      price: "150000",
+      description:
+        "El Huawei P50 Eco es una opción más económica sin sacrificar funcionalidades esenciales.",
+      link: "product.html",
+      category: "celulares",
+      brand: "Huawei",
+    },
+    {
+      image: "images/SamsungS21.png",
+      title: "Samsung S21 Eco",
+      price: "220000",
+      description:
+        "El Samsung S21 Eco ofrece un rendimiento decente a un precio muy competitivo.",
+      link: "product.html",
+      category: "celulares",
+      brand: "Samsung",
+    },
+
     {
       image: "images/charger.png",
       title: "Cargador Rápido USB-C",
@@ -350,113 +481,50 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("product-container");
     container.innerHTML = "";
 
+    const innerContainer = document.createElement("div");
+    innerContainer.className = "container";
+    container.appendChild(innerContainer);
+
     const row = document.createElement("div");
     row.className = "row";
-    container.appendChild(row);
+    innerContainer.appendChild(row);
 
     productsToDisplay.forEach((product) => {
       const col = document.createElement("div");
-      col.className = "col-sm-12 col-lg-4 mb-2";
+      col.className = "col-sm-12 col-lg-4 mb-5";
       row.appendChild(col);
 
       const bestPhoneDiv = document.createElement("div");
-      bestPhoneDiv.className = "container noselect";
+      bestPhoneDiv.className = "best_phone";
       col.appendChild(bestPhoneDiv);
 
-      const canvas = document.createElement("div");
-      canvas.className = "canvas";
-      canvas.style = "border: 2px red solid"
-      bestPhoneDiv.appendChild(canvas);
+      const img = document.createElement("img");
+      img.className = "phone-img";
+      img.src = product.image;
+      bestPhoneDiv.appendChild(img);
 
-      for (let i = 1; i <= 9; i++) {
-        const tracker = document.createElement("div");
-        tracker.className = `tracker tr-${i}`;
-        canvas.appendChild(tracker);
+      if (product.title) {
+        const h2 = document.createElement("h2");
+        h2.className = "phone_title";
+        h2.textContent = product.title;
+        bestPhoneDiv.appendChild(h2);
       }
 
-      const card = document.createElement("div");
-      card.id = "card";
-      card.classList.add("card");
-      card.setAttribute("data-link", product.link);
+      const priceSpan = document.createElement("span");
+      priceSpan.className = "phone_price";
+      priceSpan.innerHTML = `$ <span style="color: #7ad01e; font-size: 70%">${product.price}</span>`;
+      bestPhoneDiv.appendChild(priceSpan);
 
-      const cardContent = document.createElement("div");
-      cardContent.className = "card-content";
+      const p = document.createElement("p");
+      p.className = "phone_description";
+      p.textContent = product.description;
+      bestPhoneDiv.appendChild(p);
 
-      const cardGlare = document.createElement("div");
-      cardGlare.className = "card-glare";
-      cardContent.appendChild(cardGlare);
-
-      const cyberLines = document.createElement("div");
-      cyberLines.className = "cyber-lines";
-      for (let i = 0; i < 4; i++) {
-        const span = document.createElement("span");
-        cyberLines.appendChild(span);
-      }
-      cardContent.appendChild(cyberLines);
-
-      const prompt = document.createElement("img");
-      prompt.id = "prompt";
-      prompt.className = "phone";
-      prompt.alt = product.title;
-      prompt.src = product.image;
-      cardContent.appendChild(prompt);
-
-      const title = document.createElement("div");
-      title.className = "title";
-      cardContent.appendChild(title);
-
-      const titleText = document.createElement("h1");
-      titleText.className = "title-text";
-      titleText.textContent = product.title;
-      title.appendChild(titleText);
-
-      const description = document.createElement("p");
-      description.className = "phone-description";
-      description.innerHTML = product.description.replace(/\n/g, "<br>");
-      title.appendChild(description);
-
-      const glowingElements = document.createElement("div");
-      glowingElements.className = "glowing-elements";
-      for (let i = 1; i <= 3; i++) {
-        const glow = document.createElement("div");
-        glow.className = `glow-${i}`;
-        glowingElements.appendChild(glow);
-      }
-      cardContent.appendChild(glowingElements);
-
-      const subtitle = document.createElement("div");
-      subtitle.className = "subtitle";
-      const span1 = document.createElement("span");
-      span1.textContent = "$";
-      const span2 = document.createElement("span");
-      span2.className = "highlight";
-      span2.textContent = product.price;
-      subtitle.appendChild(span1);
-      subtitle.appendChild(span2);
-      cardContent.appendChild(subtitle);
-
-      const cardParticles = document.createElement("div");
-      cardParticles.className = "card-particles";
-      for (let i = 0; i < 6; i++) {
-        const span = document.createElement("span");
-        cardParticles.appendChild(span);
-      }
-      cardContent.appendChild(cardParticles);
-
-      const cornerElements = document.createElement("div");
-      cornerElements.className = "corner-elements";
-      for (let i = 0; i < 4; i++) {
-        const span = document.createElement("span");
-        cornerElements.appendChild(span);
-      }
-      cardContent.appendChild(cornerElements);
-
-      const scanLine = document.createElement("div");
-      scanLine.className = "scan-line";
-      cardContent.appendChild(scanLine);
-
-      card.appendChild(cardContent);
-      canvas.appendChild(card);
+      const a = document.createElement("a");
+      a.href = product.link;
+      a.className = "buy_phone";
+      a.textContent = "Comprar";
+      bestPhoneDiv.appendChild(a);
     });
   }
 
