@@ -352,55 +352,120 @@ document.addEventListener("DOMContentLoaded", () => {
     displayPagination();
   });
 
-    // Función para generar los trackers
-    function generateTrackers(count) {
-      let trackers = "";
-      for (let i = 1; i <= count; i++) {
-        trackers += `<div class="tracker tr-${i}"></div>`;
-      }
-      return trackers;
-    }
-
   // Función para mostrar los productos de la página actual
   function displayProducts() {
     const start = (currentPage - 1) * itemsPerPage;
     const end = start + itemsPerPage;
     const productsToDisplay = filteredProducts.slice(start, end);
 
-    let productCards = "";
+    const container = document.getElementById("product-container");
+    container.innerHTML = "";
+
+    const row = document.createElement("div");
+    row.className = "row";
+    container.appendChild(row);
+
     productsToDisplay.forEach((product) => {
-      productCards += `
-        <div class="col-sm-12 col-md-6 col-lg-3 mb-2">
-          <div class="containerCard noselect" data-link="${product.link}">
-            <div class="canvas">
-              ${generateTrackers(9)}
-            </div>
-            <div id="card">
-              <div class="card-content">
-                <div class="card-glare"></div>
-                <div class="cyber-lines">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <img id="prompt" class="phone" alt="${product.title}" src="${product.image}" />
-                <div class="title">
-                  <h1 class="title-text">${product.title}</h1>
-                  <p class="phone-description">${product.description.replace(/\n/g, "<br>")}</p>
-                </div>
-                <div class="glowing-elements">
-                  <div class="glow-1"></div>
-                  <div class="glow-2"></div>
-                  <div class="glow-3"></div>
-                </div>
-                <div class="subtitle"><span>$</span>${product.price}</div>
-              </div>
-            </div>
-          </div>
-        </div>`;
+      const col = document.createElement("div");
+      col.className = "col-sm-12 col-md-6 col-lg-3 mb-2";
+      row.appendChild(col);
+
+      const bestPhoneDiv = document.createElement("div");
+      bestPhoneDiv.className = "containerCard noselect";
+      col.appendChild(bestPhoneDiv);
+
+      const canvas = document.createElement("div");
+      canvas.className = "canvas";
+      bestPhoneDiv.appendChild(canvas);
+
+      for (let i = 1; i <= 9; i++) {
+        const tracker = document.createElement("div");
+        tracker.className = `tracker tr-${i}`;
+        canvas.appendChild(tracker);
+      }
+
+      const card = document.createElement("div");
+      card.id = "card";
+
+      const cardContent = document.createElement("div");
+      cardContent.className = "card-content";
+
+      const cardGlare = document.createElement("div");
+      cardGlare.className = "card-glare";
+      cardContent.appendChild(cardGlare);
+
+      const cyberLines = document.createElement("div");
+      cyberLines.className = "cyber-lines";
+      for (let i = 0; i < 4; i++) {
+        const span = document.createElement("span");
+        cyberLines.appendChild(span);
+      }
+      cardContent.appendChild(cyberLines);
+
+      const prompt = document.createElement("img");
+      prompt.id = "prompt";
+      prompt.className = "phone";
+      prompt.alt = product.title;
+      prompt.src = product.image;
+      cardContent.appendChild(prompt);
+
+      const title = document.createElement("div");
+      title.className = "title";
+      cardContent.appendChild(title);
+
+      const titleText = document.createElement("h1");
+      titleText.className = "title-text";
+      titleText.textContent = product.title;
+      title.appendChild(titleText);
+
+      const description = document.createElement("p");
+      description.className = "phone-description";
+      description.innerHTML = product.description.replace(/\n/g, "<br>");
+      title.appendChild(description);
+
+      const glowingElements = document.createElement("div");
+      glowingElements.className = "glowing-elements";
+      for (let i = 1; i <= 3; i++) {
+        const glow = document.createElement("div");
+        glow.className = `glow-${i}`;
+        glowingElements.appendChild(glow);
+      }
+      cardContent.appendChild(glowingElements);
+
+      const subtitle = document.createElement("div");
+      subtitle.className = "subtitle";
+      const span1 = document.createElement("span");
+      span1.textContent = "$";
+      const span2 = document.createElement("span");
+      span2.className = "highlight";
+      span2.textContent = product.price;
+      subtitle.appendChild(span1);
+      subtitle.appendChild(span2);
+      cardContent.appendChild(subtitle);
+
+      const cardParticles = document.createElement("div");
+      cardParticles.className = "card-particles";
+      for (let i = 0; i < 6; i++) {
+        const span = document.createElement("span");
+        cardParticles.appendChild(span);
+      }
+      cardContent.appendChild(cardParticles);
+
+      const cornerElements = document.createElement("div");
+      cornerElements.className = "corner-elements";
+      for (let i = 0; i < 4; i++) {
+        const span = document.createElement("span");
+        cornerElements.appendChild(span);
+      }
+      cardContent.appendChild(cornerElements);
+
+      const scanLine = document.createElement("div");
+      scanLine.className = "scan-line";
+      cardContent.appendChild(scanLine);
+
+      card.appendChild(cardContent);
+      canvas.appendChild(card);
     });
-    document.getElementById("product-container").innerHTML = `<div class="row">${productCards}</div>`;
   }
 
   // Función para generar la lista de páginas numéricas
