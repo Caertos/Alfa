@@ -708,6 +708,10 @@
         prompt.textContent = "Samsung Galaxy S21";
         cardContent.appendChild(prompt);
 
+        const btn = document.createElement("button");
+        btn.href = "https://www.youtube.com/watch?v=UVauEId-jJ0"
+        cardContent.appendChild(btn);
+
         const title = document.createElement("div");
         title.className = "title";
         cardContent.appendChild(title);
@@ -768,6 +772,7 @@
         container.appendChild(canvas);
         root.appendChild(container);
       });
+      console.log(root);
     </script>
   </body>
 </html>

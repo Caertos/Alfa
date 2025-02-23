@@ -41,6 +41,7 @@
     ><![endif]-->
   </head>
   <!-- cuerpo -->
+
   <body>
     <!--Encabezado inicio-->
 
@@ -74,9 +75,62 @@
     <!-- sección de productos inicio -->
     <div class="pt-5 gallery_section">
       <!-- Contenedor para los productos -->
-      <div id="product-container"></div>
+      <div id="product-container">
+        <div class="px-2 row productData"></div>
+      </div>
+      <!-- Template de productos -->
+      <template id="product-template">
+        <div class="tarjeta col-lg-2 col-md-4 col-sm-12 my-2">
+          <div class="containerProduct noselect">
+            <div class="canvas">
+              <div class="tracker tr-1"></div>
+              <div class="tracker tr-2"></div>
+              <div class="tracker tr-3"></div>
+              <div class="tracker tr-4"></div>
+              <div class="tracker tr-5"></div>
+              <div class="tracker tr-6"></div>
+              <div class="tracker tr-7"></div>
+              <div class="tracker tr-8"></div>
+              <div class="tracker tr-9"></div>
+              <div id="card">
+                <div class="card-content">
+                  <div class="card-glare"></div>
+                  <div class="cyber-lines">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                    <p id="prompt"></p>
+                  <div class="title d-flex justify-content-center">
+                    <img
+                      src=""
+                      alt=""
+                      class="phoneImg"
+                    />
+                  </div>
+                  <div class="glowing-elements">
+                    <div class="glow-1"></div>
+                    <div class="glow-2"></div>
+                    <div class="glow-3"></div>
+                  </div>
+                  <div class="subtitle">
+                    <span>$</span><span class="highlight priceProduct"></span>
+                  </div>
+                  <div class="card-particles">
+                    <span></span><span></span><span></span> <span></span
+                    ><span></span><span></span>
+                  </div>
+                  <div class="corner-elements">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                  <div class="scan-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+      <!-- Template de productos -->
       <!-- Contenedor para la paginación -->
-      <div id="pagination" class="container text-center"></div>
+      <!-- <div id="pagination" class="container text-center"></div> -->
     </div>
 
     <div class="container" id="filter-panel">
@@ -116,15 +170,7 @@
 
     <!-- Archivos Javascript-->
     <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
-    <!--     <script src="js/plugin.js"></script> -->
-    <!-- barra lateral -->
-    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- javascript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    </script>
   </body>
 </html>
