@@ -55,17 +55,39 @@
     </script>
     <!-- NAVBAR FIN -->
     <!-- SECCION CONTACTO INICIO -->
-     <div class="row">
-     <div class="col-lg-6" style="height: 100vh; border: 2px solid red;">
-
-     </div>
-     <div class="col-lg-6 justify-content-center">
+    <div class="row">
+      <div class="col-lg-6" style="height: 100vh; border: 2px solid red"></div>
+      <div class="col-lg-6 justify-content-center" style="height: 100vh;">
         <h1 class="text-center">¿Donde encontrarnos?</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.886730009788!2d-75.39682103361612!3d9.30399445154771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5915fa748f6719%3A0x4d6ced60e8302dd!2sAlfa%20Smart!5e0!3m2!1ses-419!2sco!4v1740433860466!5m2!1ses-419!2sco" width="100%" height="92%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     </div>
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=9.30399445154771,-75.39682103361612"
+          target="_blank"
+          class="btn-primary"
+          style="
+            padding: 10px 20px;
+            border-radius: 5px;
+            position: absolute;
+            z-index: 5;
+            margin-left: 190px;
+            margin-top: 20px;
+          "
+        >
+          Cómo llegar
+        </a>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.886730009788!2d-75.39682103361612!3d9.30399445154771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e5915fa748f6719%3A0x4d6ced60e8302dd!2sAlfa%20Smart!5e0!3m2!1ses-419!2sco!4v1740433860466!5m2!1ses-419!2sco"
+          width="100%"
+          height="85%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
+      </div>
     </div>
     <!-- SECCION CONTACTO FIN -->
-         <!-- sección de pie de página inicio -->
+    <!-- sección de pie de página inicio -->
     <div id="footer-placeholder"></div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -73,7 +95,6 @@
       });
     </script>
     <!-- sección de pie de página fin -->
-
 
     <!-- Archivos Javascript-->
     <script src="js/jquery.min.js"></script>
