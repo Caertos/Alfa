@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const productTemplateClone = templateProduct.content.cloneNode(true);
     productTemplateClone.querySelector("#prompt").textContent = product.name;
+    productTemplateClone.querySelector("#prompt").href = "#"
     productTemplateClone.querySelector(".priceProduct").textContent = product.price;
     productTemplateClone.querySelector(".phoneImg").src = product.img;
     productTemplateClone.querySelector(".phoneImg").alt = product.name;
