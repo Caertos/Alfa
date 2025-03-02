@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "Redmi Note 13S",
-      category: "accesorios",
+      category: "celulares",
       price: 1200000,
       img: "images/redmi13pro.jpg",
     },
