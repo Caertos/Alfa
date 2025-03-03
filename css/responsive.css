@@ -649,4 +649,8 @@
     width: 100%;
     box-sizing: border-box;
   }
+
+  .navbar-expand-sm{
+    background-color: #7ad01e;
+  }
 }
