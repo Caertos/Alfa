@@ -132,5 +132,5 @@ document.addEventListener("DOMContentLoaded", () => {
       pagination.appendChild(createPageButton(">", currentPage + 1));
     }
   }
-  console.log(loadProducts());
+  loadProducts();
 });
