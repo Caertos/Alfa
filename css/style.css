@@ -380,7 +380,7 @@ a:hover {
   color: #ffffff;
 }
 
-.contact-hover:hover{
+.contact-hover:hover {
   color: black;
   font-weight: 600;
 }
@@ -1035,39 +1035,46 @@ a:hover {
 
 /* Estilos catalogo de productos */
 
-.catalog-container{
+.catalog-container {
   background-color: #3d3d3d;
 }
 
-.product-catalog{
+.product-catalog {
   border-radius: 2rem;
 }
 
 .product-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.product-img{
+.product-img {
   z-index: 1;
+  width: 80%;
+  height: 50%;
+  border-radius: 1rem 1rem 0 0;
 }
 
-.product-detail{
+.product-detail {
   color: white;
   background-color: #3d3d3d;
-  padding: .5rem;
-  border-radius: 1rem;
+  padding: 0.5rem;
+  border-radius: 0 0 1rem 1rem;
   position: relative;
   display: flex;
   flex-direction: column;
   width: 80%;
   margin: auto;
-  margin-top: -1.5rem;
+  margin-top: -1rem;
   padding-top: 1rem;
+  align-items: center;
 }
 
-.product-title{
-  font-size: 100%;
+.product-title {
+  width: 100%;
+  text-align: center;
+  font-size: 80%;
   color: white;
   font-weight: 600;
   position: absolute;
@@ -1075,15 +1082,16 @@ a:hover {
   transform: translateX(-50%);
 }
 
-.product-price{
+.product-price {
   font-weight: 400;
+  font-size: 80%;
 }
 
 .product-add {
   border: 0;
   background-color: white;
   color: #3d3d3d;
-  padding: .1rem;
+  font-size: 80%;
   text-transform: uppercase;
   border-radius: 1rem;
   border: 2px solid white;
@@ -1091,14 +1099,14 @@ a:hover {
   font-weight: 600;
 }
 
-.product-add:hover{
+.product-add:hover {
   background: #3d3d3d;
   color: white;
 }
 
 /*aside*/
 
-aside{
+aside {
   padding-top: 2rem;
   color: white;
   position: sticky;
@@ -1107,15 +1115,15 @@ aside{
   justify-content: space-between;
 }
 
-.category-menu{
+.category-menu {
   margin-top: 2rem;
 }
 
-.category-menu>img{
+.category-menu > img {
   filter: invert(1);
 }
 
-.category-btn{
+.category-btn {
   background-color: transparent !important;
   font-weight: 500;
   color: white;
@@ -1125,21 +1133,21 @@ aside{
 .p-active {
   background-color: white;
   padding-right: 0;
-  border-radius:  2rem 0 0 2rem;
+  border-radius: 2rem 0 0 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.p-active>.category-btn{
+.p-active > .category-btn {
   color: #3d3d3d;
   font-weight: 700;
 }
 
-.p-active>img{
+.p-active > img {
   filter: invert(0) contrast(40%);
 }
 
-#text-selected-catalog{
+#text-selected-catalog {
   color: #3d3d3d;
   font-weight: 600;
   margin-left: 2rem;

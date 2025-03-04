@@ -1,59 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const products = [
-    {
-      name: "Samsung Galaxy S21",
-      category: "celulares",
-      price: 1085000,
-      img: "images/SamsungS21.png",
-    },
-    {
-      name: "Redmi Note 13S",
-      category: "celulares",
-      price: 1200000,
-      img: "images/redmi13pro.jpg",
-    },
-    {
-      name: "Producto 3",
-      category: "cargadores",
-      price: 30,
-      img: "images/redmi13pro.jpg",
-    },
-    {
-      name: "Producto 4",
-      category: "cargadores",
-      price: 30,
-      img: "images/redmi13pro.jpg",
-    },
-    {
-      name: "Producto 5",
-      category: "cargadores",
-      price: 30,
-      img: "images/redmi13pro.jpg",
-    },
-    {
-      name: "Producto 6",
-      category: "cargadores",
-      price: 30,
-      img: "images/redmi13pro.jpg",
-    },
-    {
-      name: "Producto 7",
-      category: "accesorios",
-      price: 40,
-      img: "images/redmi13pro.jpg",
-    },
-    {
-      name: "Producto 8",
-      category: "accesorios",
-      price: 40,
-      img: "images/redmi13pro.jpg",
-    },
-  ];
-
   const data = document.querySelector(".productData");
   const pagination = document.querySelector("#pagination");
   const itemsPerPage = 6;
   let currentPage = 1;
+  let products = [];
+
+  function loadProducts() {
+    fetch("./components/products.json")
+      .then((response) => response.json())
+      .then((jsonProducts) => {
+        products = jsonProducts;
+        renderProducts()
+      });
+  }
 
   function renderProducts() {
     data.innerHTML = "";
@@ -173,5 +132,5 @@ document.addEventListener("DOMContentLoaded", () => {
       pagination.appendChild(createPageButton(">", currentPage + 1));
     }
   }
-  renderProducts();
+  console.log(loadProducts());
 });
