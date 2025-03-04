@@ -6,6 +6,11 @@
   .header-search {
     padding: 15px 0px;
   }
+
+  .p-active {
+    width: 20%;
+    border-radius: 2rem;
+  }
 }
 
 /*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
@@ -76,6 +81,10 @@
   }
   #collapseFilter.d-md-block {
     padding: 30px 0px;
+  }
+  .p-active {
+    width: 27%;
+    border-radius: 2rem;
   }
 }
 
@@ -153,6 +162,10 @@
   .massage-bt {
     height: 160px;
     padding: 55px 20px 10px 20px;
+  }
+  .p-active {
+    width: 50%;
+    border-radius: 2rem;
   }
 }
 
@@ -386,6 +399,10 @@
 
   #navFont {
     font-size: 18px;
+  }
+  .p-active {
+    width: 27%;
+    border-radius: 2rem;
   }
 }
 
