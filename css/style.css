@@ -380,6 +380,11 @@ a:hover {
   color: #ffffff;
 }
 
+.contact-hover:hover{
+  color: black;
+  font-weight: 600;
+}
+
 /* ESTILO TRAJETAS DE PRODUCTO */
 .containerProduct {
   position: relative;
@@ -1026,4 +1031,116 @@ a:hover {
 #card:hover .corner-elements span {
   border-color: rgba(92, 103, 255, 0.8);
   box-shadow: 0 0 10px rgba(92, 103, 255, 0.5);
+}
+
+/* Estilos catalogo de productos */
+
+.catalog-container{
+  background-color: #3d3d3d;
+}
+
+.product-catalog{
+  border-radius: 2rem;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-img{
+  z-index: 1;
+}
+
+.product-detail{
+  color: white;
+  background-color: #3d3d3d;
+  padding: .5rem;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  margin-top: -1.5rem;
+  padding-top: 1rem;
+}
+
+.product-title{
+  font-size: 100%;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product-price{
+  font-weight: 400;
+}
+
+.product-add {
+  border: 0;
+  background-color: white;
+  color: #3d3d3d;
+  padding: .1rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  border: 2px solid white;
+  margin-top: -1.5rem;
+  font-weight: 600;
+}
+
+.product-add:hover{
+  background: #3d3d3d;
+  color: white;
+}
+
+/*aside*/
+
+aside{
+  padding-top: 2rem;
+  color: white;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category-menu{
+  margin-top: 2rem;
+}
+
+.category-menu>img{
+  filter: invert(1);
+}
+
+.category-btn{
+  background-color: transparent !important;
+  font-weight: 500;
+  color: white;
+  font-size: 80%;
+}
+
+.p-active {
+  background-color: white;
+  padding-right: 0;
+  border-radius:  2rem 0 0 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.p-active>.category-btn{
+  color: #3d3d3d;
+  font-weight: 700;
+}
+
+.p-active>img{
+  filter: invert(0) contrast(40%);
+}
+
+#text-selected-catalog{
+  color: #3d3d3d;
+  font-weight: 600;
+  margin-left: 2rem;
 }
