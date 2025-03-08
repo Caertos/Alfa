@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- básico -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- metas móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- metas del sitio -->
+    <title>Carrito</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- estilo css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+  </head>
+  <!-- body -->
+  <body class="main-layout">
+    <!-- NAVBAR INICIO -->
+    <div id="navbar-placeholder"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("./components/navbar.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("navbar-placeholder").innerHTML = data;
+          });
+      });
+    </script>
+    <!-- NAVBAR FIN -->
+    <!-- Sección principal inicio -->
+    <div class="container">
+      <div class="col-12">
+        <div class="row mb-2 container-cart">
+          <div class="col-lg-2 col-md-2 col-sm-12">
+            <img class="cart-img w-auto" src="./images/redmi13pro.jpg" alt="" />
+          </div>
+          <div class="col-3">
+            <small class="text-white cart-text2">Producto</small>
+            <h3 class="text-white cart-text">Redmi 13 pro</h3>
+          </div>
+          <div class="col-2">
+            <small class="text-white cart-text2">Cantidad</small>
+            <h3 class="text-white cart-text">2</h3>
+          </div>
+          <div class="col-2">
+            <small class="text-white cart-text2">Precio</small>
+            <h3 class="text-white cart-text">$1200000</h3>
+          </div>
+          <div class="col-2">
+            <small class="text-white cart-text2">Subtotal</small>
+            <h3 class="text-white cart-text">$2400000</h3>
+          </div>
+          <div class="col-1">
+            <a href="#"
+              ><img src="./images/trash.svg" class="trash" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="row mb-2 container-cart">
+            <div class="col-lg-2 col-md-2 col-sm-12">
+              <img class="cart-img w-auto" src="./images/cargador.jpg" alt="" />
+            </div>
+            <div class="col-3">
+              <small class="text-white cart-text2">Producto</small>
+              <h3 class="text-white cart-text">Cargador</h3>
+            </div>
+            <div class="col-2">
+              <small class="text-white cart-text2">Cantidad</small>
+              <h3 class="text-white cart-text">3</h3>
+            </div>
+            <div class="col-2">
+              <small class="text-white cart-text2">Precio</small>
+              <h3 class="text-white cart-text">$50000</h3>
+            </div>
+            <div class="col-2">
+              <small class="text-white cart-text2">Subtotal</small>
+              <h3 class="text-white cart-text">$150000</h3>
+            </div>
+            <div class="col-1">
+              <a href="#"
+                ><img src="./images/trash.svg" class="trash" alt=""
+              /></a>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row container text-center">
+        <div class="col"><a href="#" class="empty-btn">Vaciar carrito</a></div>
+        <div class="col"><span class="totalText">Total: $2550000</span><span class="totalPrice"><a href="#" class="buy_btn">Comprar</a></span></div>
+    </div>
+    <!-- Sección principal fin -->
+
+    <!-- sección de pie de página inicio -->
+    <div id="footer-placeholder"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#footer-placeholder").load("./components/footer.html");
+      });
+    </script>
+    <!-- sección de pie de página fin -->
+
+    <!-- Archivos Javascript-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+  </body>
+</html>

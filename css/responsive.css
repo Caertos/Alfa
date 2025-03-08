@@ -11,6 +11,14 @@
     width: 20%;
     border-radius: 2rem;
   }
+
+  .cart-text {
+    font-size: 13px;
+  }
+
+  .cart-text2 {
+    font-size: 12px;
+  }
 }
 
 /*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
@@ -85,6 +93,23 @@
   .p-active {
     width: 27%;
     border-radius: 2rem;
+  }
+
+  .cart-img {
+    height: 80px;
+    border-radius: 2rem;
+  }
+
+  .cart-text {
+    font-size: 12px;
+  }
+
+  .cart-text2 {
+    font-size: 11px;
+  }
+
+  .trash {
+    width: 50%;
   }
 }
 
@@ -166,6 +191,35 @@
   .p-active {
     width: 50%;
     border-radius: 2rem;
+  }
+
+  .cart-img {
+    height: 80px;
+    border-radius: 2rem;
+  }
+
+  .cart-text {
+    font-size: 10px;
+  }
+
+  .cart-text2 {
+    font-size: 9px;
+  }
+
+  .trash {
+    width: 80%;
+  }
+
+  .empty-btn {
+    font-size: 9px;
+  }
+  
+  .totalText {
+    font-size: 9px;
+  }
+  
+  .buy_btn {
+    font-size: 9px;
   }
 }
 
@@ -667,7 +721,7 @@
     box-sizing: border-box;
   }
 
-  .navbar-expand-sm{
+  .navbar-expand-sm {
     background-color: #7ad01e;
   }
 }

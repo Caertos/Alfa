@@ -227,35 +227,6 @@ button {
   font-size: 75%;
 }
 
-.phone-img,
-.phone_data,
-.phone_title,
-.phone_price,
-.phone_description {
-  transition: 1s;
-}
-
-.best_phone:hover .phone_description {
-  transform: translateY(10rem);
-}
-
-.best_phone:hover .phone-img {
-  transform: translateY(-5rem);
-}
-
-.best_phone:hover .phone_title {
-  transform: translateY(7rem);
-}
-
-.best_phone:hover .phone_price {
-  transform: translateY(8rem);
-}
-
-.best_phone:hover .buy_phone {
-  opacity: 1;
-  transform: translateY(12rem);
-}
-
 .best_text {
   width: 100%;
   float: left;
@@ -1154,3 +1125,65 @@ aside {
   font-weight: 600;
   margin-left: 2rem;
 }
+
+/*Sección Carrito*/
+
+.container-cart{
+  position: relative;
+  display: flex;
+  height: auto;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: #838282;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.cart-img{
+  height: 5rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.cart-text {
+  font-size: 15px;
+}
+
+.cart-text2 {
+  font-size: 10px;
+}
+
+.trash {
+  width: 30%;
+}
+
+.empty-btn {
+  background-color: #838282;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 2rem;
+  font-weight: 500;
+}
+
+.totalText {
+  background-color: #838282;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  border-radius: 2rem 0 0 2rem;
+  color: white;
+  font-weight: 500;
+}
+
+.buy_btn {
+  border: 1px #838282 solid;
+  padding: 0.438rem;
+  border-radius: 0 2rem 2rem 0;
+  box-sizing: border-box;
+  font-weight: 500;
+  color: #838282;
+}
+
+.buy_btn:hover {
+  font-weight: 800;
+  color: #838282;
+}
+
