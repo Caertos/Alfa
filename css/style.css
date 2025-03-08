@@ -1162,6 +1162,13 @@ aside {
   color: white;
   border-radius: 2rem;
   font-weight: 500;
+  border: 1px solid #838282;
+}
+
+.empty-btn:hover {
+  background-color: white;
+  color: #838282;
+  font-weight: 500;
 }
 
 .totalText {
@@ -1170,19 +1177,24 @@ aside {
   border-radius: 2rem 0 0 2rem;
   color: white;
   font-weight: 500;
+  border: 1px solid #838282;
 }
 
 .buy_btn {
   border: 1px #838282 solid;
-  padding: 0.438rem;
+  padding: 0.5rem;
   border-radius: 0 2rem 2rem 0;
   box-sizing: border-box;
   font-weight: 500;
   color: #838282;
 }
 
-.buy_btn:hover {
-  font-weight: 800;
+.hover-container:hover .totalText{
+  background-color: white;
   color: #838282;
 }
 
+.hover-container:hover .buy_btn{
+  background-color: #838282;
+  color: white;
+}
