@@ -415,6 +415,7 @@ a:hover {
 }
 
 #prompt {
+  padding: 3px;
   width: 100%;
   top: 50%;
   z-index: 20;
