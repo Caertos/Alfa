@@ -289,8 +289,7 @@ a:hover {
 }
 .footer-logo {
   float: left;
-  font-size: 12pt;
-  color: #fdfefe;
+  width: 80%;
 }
 
 .mail_section li {
