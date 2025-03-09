@@ -1132,7 +1132,7 @@ aside {
   display: flex;
   height: auto;
   padding: 1rem;
-  border-radius: 2rem;
+  border-radius: 1rem;
   background-color: #838282;
   justify-content: space-between;
   align-items: center;
@@ -1173,7 +1173,7 @@ aside {
 
 .totalText {
   background-color: #838282;
-  padding: 0.5rem 0 0.5rem 0.5rem;
+  padding: 0.5rem;
   border-radius: 2rem 0 0 2rem;
   color: white;
   font-weight: 500;
@@ -1197,4 +1197,18 @@ aside {
 .hover-container:hover .buy_btn{
   background-color: #838282;
   color: white;
+}
+
+.cartCont {
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  top: 0;
 }
