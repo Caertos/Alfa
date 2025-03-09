@@ -1023,9 +1023,9 @@ a:hover {
 .product-img {
   z-index: 1;
   width: 80%;
-  height: 50%;
-  max-height: 150px;
+  height: 60%;
   border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
 }
 
 .product-detail {
