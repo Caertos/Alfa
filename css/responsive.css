@@ -97,8 +97,7 @@
 
   .cart-img {
     height: 80px;
-    border-radius: 2rem;
-  }
+    }
 
   .cart-text {
     font-size: 12px;
@@ -190,11 +189,6 @@
   }
   .p-active {
     width: 50%;
-    border-radius: 2rem;
-  }
-
-  .cart-img {
-    height: 80px;
     border-radius: 2rem;
   }
 

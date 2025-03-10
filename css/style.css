@@ -1089,6 +1089,7 @@ aside {
 
 .category-menu {
   margin-top: 2rem;
+  padding-left: 1rem;
 }
 
 .category-menu > img {
@@ -1132,7 +1133,7 @@ aside {
   display: flex;
   height: auto;
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 5px;
   background-color: #838282;
   justify-content: space-between;
   align-items: center;
@@ -1141,7 +1142,7 @@ aside {
 
 .cart-img{
   height: 5rem;
-  border-radius: 2rem 0 0 2rem;
+  border-radius: 5px;
 }
 
 .cart-text {
@@ -1172,18 +1173,14 @@ aside {
 }
 
 .totalText {
-  background-color: #838282;
-  padding: 0.5rem;
-  border-radius: 2rem 0 0 2rem;
-  color: white;
-  font-weight: 500;
-  border: 1px solid #838282;
+  color: #838282;
+  font-weight: 600;
 }
 
 .buy_btn {
   border: 1px #838282 solid;
   padding: 0.5rem;
-  border-radius: 0 2rem 2rem 0;
+  border-radius: 2rem;
   box-sizing: border-box;
   font-weight: 500;
   color: #838282;
