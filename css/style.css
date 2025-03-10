@@ -1092,8 +1092,9 @@ aside {
   padding-left: 1rem;
 }
 
-.category-menu > img {
+.category-menu > button > img {
   filter: invert(1);
+  height: 20px
 }
 
 .category-btn {
@@ -1116,7 +1117,7 @@ aside {
   font-weight: 700;
 }
 
-.p-active > img {
+.p-active > button > img {
   filter: invert(0) contrast(40%);
 }
 
@@ -1186,12 +1187,7 @@ aside {
   color: #838282;
 }
 
-.hover-container:hover .totalText{
-  background-color: white;
-  color: #838282;
-}
-
-.hover-container:hover .buy_btn{
+.buy_btn:hover{
   background-color: #838282;
   color: white;
 }
