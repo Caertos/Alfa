@@ -1,0 +1,50 @@
+import "./footer.css";
+
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div>
+        <img src="/logoAlfa.webp" alt="AlfaLogo" className="footer-logo" />
+      </div>
+      <div>
+        <h3>Conoce más</h3>
+        <ul>
+          <li>Quienes Somos</li>
+          <li>Servicios</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contáctanos</h3>
+        <ul>
+          <li>
+            Whatsapp: <span>3XX XXX XXXX</span>
+          </li>
+          <li>
+            Teléfono: <span>605 XXX XXXX</span>
+          </li>
+          <li>
+            Correo: <span>alfaclientes@gmail.com</span>
+          </li>
+          <li>Preguntas frecuentes</li>
+          <li>Localízanos</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Síguenos</h3>
+        <div className="social-media">
+        <a href="">
+          <img src="/instagram.png" alt="" />
+        </a>
+        <a href="">
+          <img src="/facebook.png" alt="" />
+        </a>
+        <a href="">
+          <img src="/tiktok.png" alt="" />
+        </a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

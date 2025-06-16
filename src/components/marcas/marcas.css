@@ -1,0 +1,30 @@
+.marcas {
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  background-color: #1e1e1e;
+  padding: 1vw 7vw 6vw 7vw;
+
+  @media screen and (max-width: 768px) {
+    padding: 1vw 5vw 10vw 5vw;
+  }
+}
+
+.marcas-title {
+  background-color: #1e1e1e;
+  margin-bottom: 0;
+  color: whitesmoke;
+  margin-bottom: 5vw;
+}
+
+.marcas-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.marcas-container img {
+  @media screen and (max-width: 768px) {
+    width: 13%;
+  }
+}

@@ -1,0 +1,212 @@
+/* navbar superior*/
+
+.navbar_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 40px;
+  padding: 1vw 10px 1vw 10px;
+  margin-left: 5%;
+}
+
+.enterprise_logo {
+  width: auto;
+  max-height: 40px;
+
+  @media screen and (max-width: 390px) {
+    max-width: 50px;
+    max-height: 20px;
+    height: auto;
+  }
+}
+
+.search_container {
+  position: relative;
+  width: 45%;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.search_input {
+  border: 1px solid #d0d0d0;
+  border-radius: 100px;
+  width: 100%;
+  padding-left: 8%;
+  padding-right: 22%;
+}
+
+.search_input:focus {
+  border-width: 2px;
+  border-color: #d0d0d0;
+  outline: none;
+}
+
+.search_icon {
+  position: absolute;
+  right: 10px;
+  top: 17%;
+  height: 100%;
+}
+
+.navbar_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+
+.navbar_icons a {
+  display: flex;
+  width: 3vw;
+  height: 3vw;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    width: 6vw;
+    height: 6vw;
+    margin-left: 5px;
+  }
+}
+
+.navbar_icons img {
+  height: 70%;
+}
+
+.cart {
+  background-color: #77d423;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+/* Navbar links */
+
+.navbar_secondary {
+  position: relative;
+}
+
+.navbar_links {
+  font-size: calc(0.8vw + 0.1em);
+  font-weight: 400;
+  text-transform: uppercase;
+  display: flex;
+  padding: 10px 5% 10px 5%;
+  background-color: #e5e5e5;
+  position: relative;
+  height: 1.5vw;
+  align-items: center;
+}
+
+.navbar_links li {
+  margin-right: 5%;
+  width: 5%;
+}
+
+.navbar_links li a {
+  transition: 0.1s ease-in;
+}
+
+.navbar_offers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  height: 100%;
+  width: 25%;
+  border-radius: 100px 0 0 100px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  padding-left: 1%;
+}
+
+.navbar_offers img {
+  margin-right: 5px;
+  height: 2vw;
+}
+
+.navbar_links li a:hover {
+  font-weight: 800;
+}
+
+.navbar_offers:hover {
+  font-weight: 800;
+}
+
+/* Navbar links responsive */
+
+/* Botón hamburguesa */
+.hamburger_menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+  z-index: 1002;
+}
+
+.hamburger_menu span {
+  width: 24px;
+  height: 3px;
+  background: #222;
+  margin: 3px 0;
+  border-radius: 2px;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Menú responsive */
+@media screen and (max-width: 390px) {
+  .navbar_links {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 50vw;
+    height: 100vh;
+    background: #e5e5e5;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+    transition: right 0.3s;
+    z-index: 1001;
+    font-size: 4vw;
+  }
+  .navbar_links.open {
+    right: 0;
+  }
+  .navbar_links li {
+    width: 100%;
+    margin: 20px 0 0 20px;
+  }
+  .navbar_offers {
+    position: static;
+    display: flex;
+    width: 99%;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .navbar_offers img {
+    height: 5vw;
+  }
+
+  .navbar_logo {
+    margin-left: 0;
+    padding: 10px;
+  }
+  .hamburger_menu {
+    display: flex;
+  }
+}
