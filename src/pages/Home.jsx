@@ -5,15 +5,19 @@ import Marcas from "../components/marcas/Marcas";
 import Footer from "../components/footer/Footer";
 
 const Home = () => {
-    return (
-        <div className="general-container">
-            <Slider />
-            <Novedades />
-            <MasVendido />
-            <Marcas />
-            <Footer />
-        </div>
-    );
-}
+  return (
+    <>
+      <div className="general-container">
+        <Slider />
+        <Novedades />
+        <MasVendido />
+      </div>
+      <div className="secondary-container">
+        <Marcas />
+        <Footer />
+      </div>
+    </>
+  );
+};
 
 export default Home;
