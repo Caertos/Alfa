@@ -11,6 +11,12 @@ const Footer = () => {
         <ul>
           <li>Quienes Somos</li>
           <li>Servicios</li>
+          <li>
+            {" "}
+            <a href="https://www.pixabit.com.co" className="pixabit" rel="nofollow">
+              Desarrollado por Pixabit ®
+            </a>
+          </li>
         </ul>
       </div>
       <div>
@@ -32,15 +38,15 @@ const Footer = () => {
       <div>
         <h3>Síguenos</h3>
         <div className="social-media">
-        <a href="">
-          <img src="/instagram.png" alt="" />
-        </a>
-        <a href="">
-          <img src="/facebook.png" alt="" />
-        </a>
-        <a href="">
-          <img src="/tiktok.png" alt="" />
-        </a>
+          <a href="">
+            <img src="/instagram.png" alt="" />
+          </a>
+          <a href="">
+            <img src="/facebook.png" alt="" />
+          </a>
+          <a href="">
+            <img src="/tiktok.png" alt="" />
+          </a>
         </div>
       </div>
     </footer>

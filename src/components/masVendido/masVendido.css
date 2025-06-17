@@ -2,97 +2,93 @@
   display: grid;
   grid-template-columns: 3fr 2fr;
   margin-top: 8vh;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
+  padding: 2vh 0;
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .masVendido {
     display: flex;
     flex-direction: column-reverse;
   }
 }
 
-.masVendido div:nth-child(1) {
+.masVendido .slider-container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   margin-top: 3vh;
+}
 
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
+@media screen and (max-width: 768px) {
+  .masVendido .slider-container {
+    flex-direction: row;
   }
 }
 
-.masVendido div:nth-child(2) {
+.masVendido .slider-container span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  min-height: 270px;
+  margin-left: 1vh;
+  margin-bottom: 2vh;
+  padding: 3vw 0;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px 0.1px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .masVendido .slider-container span {
+    width: 70%;
+  }
+}
+
+.masVendido .slider-container .button-product {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  background: transparent;
+  border: none;
+}
+
+.masVendido .slider-container .prev-product {
+  left: 0;
+}
+
+.masVendido .slider-container .next-product {
+  right: 0;
+}
+
+.masVendido .image-wrapper {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.masVendido div:nth-child(2) img{
+.masVendido .image-wrapper img {
   width: 90%;
+}
 
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .masVendido .image-wrapper img {
     width: 100%;
   }
 }
 
-.masVendido div:nth-child(1) span {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30%;
-  margin-bottom: 2vh;
-  background-color: white;
-  margin-left: 1vh;
-  padding: 3vw 0;
-  border-radius: 25px;
-  box-shadow: 2px 2px 2px 0.1px rgba(0, 0, 0, 0.1);
-}
-
-.price {
-  color: #77d423;
-  font-weight: 900;
-}
-
-.masVendido div:nth-child(1) span img,
-.masVendido div:nth-child(1) span p,
-.masVendido div:nth-child(1) span a {
-  margin: 0.5vh;
-  text-align: center;
-}
-
-.masVendido div:nth-child(1) span a {
-  position: relative;
+.masVendido .marketing-img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #77d423;
-  color: whitesmoke;
-  padding: 0.5rem 1rem;
-  border-radius: 100px;
-  max-height: 20px;
-  max-width: 120px;
-  transition: 0.3s ease;
 }
 
-.masVendido div:nth-child(1) span a:hover {
-  background-color: #2c4f0e;
-}
-
-.masVendido div:nth-child(1) span .product-img {
-  width: 10vw;
-  height: 12vw;
-  margin-bottom: 0;
-  object-fit: cover;
+.masVendido .marketing-img img{
+  width: 80%;
 
   @media screen and (max-width: 768px) {
-    width: 25vw;
-    height: 30vw;
+    width: 100%;
   }
-}
-
-.masVendido div:nth-child(1) span a img {
-  width: 12%;
-  filter: invert(1) contrast(1.5);
 }

@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "name": "Samsung Galaxy S23",
+    "description": "Samsung Galaxy S23, smartphone de alto rendimiento con pantalla AMOLED y cámara de 50MP.",
+    "price": 1551750,
+    "imgUrl": "/products/SamsungS23.webp",
+    "category": "celulares",
+    "stock": 14,
+    "sold": 105,
+    "dateCreation": "2025-06-13T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Auriculares JBL Tune 510BT",
+    "description": "Auriculares inalámbricos JBL Tune 510BT con sonido Pure Bass y hasta 40 horas de batería.",
+    "price": 3297138,
+    "imgUrl": "/products/JBL510BT.webp",
+    "category": "accesorios",
+    "stock": 5,
+    "sold": 144,
+    "dateCreation": "2025-06-13T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Cargador Rápido Anker 20W",
+    "description": "Cargador USB-C Anker de 20W, compatible con carga rápida para smartphones y tablets.",
+    "price": 768836,
+    "imgUrl": "/products/Anker20W.webp",
+    "category": "accesorios",
+    "stock": 20,
+    "sold": 110,
+    "dateCreation": "2025-06-15T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "name": "Sony WH-1000XM4",
+    "description": "Auriculares inalámbricos Sony WH-1000XM4 con cancelación de ruido líder en la industria y hasta 30 horas de batería.",
+    "price": 2237468,
+    "imgUrl": "/products/SonyWH1000XM4.webp",
+    "category": "sonido",
+    "stock": 17,
+    "sold": 119,
+    "dateCreation": "2025-06-10T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "name": "Bose SoundLink Revolve+",
+    "description": "Altavoz Bluetooth Bose SoundLink Revolve+ con sonido envolvente de 360° y resistencia al agua.",
+    "price": 2390779,
+    "imgUrl": "/products/BoseSoundLinkRevolvePlus.webp",
+    "category": "sonido",
+    "stock": 18,
+    "sold": 139,
+    "dateCreation": "2025-06-02T00:00:00Z"
+  },
+  {
+    "id": 6,
+    "name": "iPhone 15 Pro",
+    "description": "Apple iPhone 15 Pro con pantalla Super Retina XDR de 6.1 pulgadas y chip A17 Pro.",
+    "price": 3563649,
+    "imgUrl": "/products/iPhone15ProMax.webp",
+    "category": "celulares",
+    "stock": 30,
+    "sold": 136,
+    "dateCreation": "2025-06-13T00:00:00Z"
+  },
+  {
+    "id": 7,
+    "name": "Samsung Galaxy Tab S9",
+    "description": "Tablet Samsung Galaxy Tab S9 con pantalla AMOLED de 11 pulgadas y S Pen incluido.",
+    "price": 3437976,
+    "imgUrl": "/products/SamsungGalaxyTabS9.webp",
+    "category": "tablets",
+    "stock": 25,
+    "sold": 124,
+    "dateCreation": "2025-06-13T00:00:00Z"
+  },
+  {
+    "id": 8,
+    "name": "Apple iPad Pro 12.9\"",
+    "description": "Apple iPad Pro de 12.9 pulgadas (2024), pantalla Liquid Retina XDR y chip M4.",
+    "price": 2642167,
+    "imgUrl": "/products/iPadPro129.webp",
+    "category": "tablets",
+    "stock": 14,
+    "sold": 137,
+    "dateCreation": "2025-06-15T00:00:00Z"
+  },
+  {
+    "id": 9,
+    "name": "Xiaomi Redmi Note 13 Pro",
+    "description": "Xiaomi Redmi Note 13 Pro, smartphone con cámara de 200MP y batería de 5000mAh.",
+    "price": 1103603,
+    "imgUrl": "/products/RedmiNote13Pro.webp",
+    "category": "celulares",
+    "stock": 9,
+    "sold": 110,
+    "dateCreation": "2025-06-03T00:00:00Z"
+  },
+  {
+    "id": 10,
+    "name": "Lenovo Tab P12",
+    "description": "Lenovo Tab P12, tablet con pantalla 2.5K de 12.7 pulgadas y cuatro altavoces JBL.",
+    "price": 2209155,
+    "imgUrl": "/products/LenovoTabP12.webp",
+    "category": "tablets",
+    "stock": 4,
+    "sold": 67,
+    "dateCreation": "2025-06-16T00:00:00Z"
+  },
+  {
+    "id": 11,
+    "name": "Logitech MX Master 3S",
+    "description": "Mouse inalámbrico Logitech MX Master 3S con sensor de 8000 DPI y carga USB-C.",
+    "price": 1762613,
+    "imgUrl": "/products/MouseLogitechMXMaster3S.webp",
+    "category": "accesorios",
+    "stock": 2,
+    "sold": 94,
+    "dateCreation": "2025-06-03T00:00:00Z"
+  },
+  {
+    "id": 12,
+    "name": "Anker PowerCore 20000mAh",
+    "description": "Batería portátil Anker PowerCore de 20000mAh con carga rápida PowerIQ.",
+    "price": 3643200,
+    "imgUrl": "/products/AnkerPowerCore.webp",
+    "category": "accesorios",
+    "stock": 6,
+    "sold": 13,
+    "dateCreation": "2025-06-02T00:00:00Z"
+  },
+  {
+    "id": 13,
+    "name": "JBL Flip 6",
+    "description": "Altavoz Bluetooth JBL Flip 6, resistente al agua y con 12 horas de autonomía.",
+    "price": 1083259,
+    "imgUrl": "/products/JBLFlip6.webp",
+    "category": "sonido",
+    "stock": 12,
+    "sold": 110,
+    "dateCreation": "2025-06-07T00:00:00Z"
+  },
+  {
+    "id": 14,
+    "name": "Amazon Fire HD 10",
+    "description": "Producto 14 Tablets - producto de alta calidad.",
+    "price": 938875,
+    "imgUrl": "/products/AmazonFireHD10.webp",
+    "category": "tablets",
+    "stock": 24,
+    "sold": 115,
+    "dateCreation": "2025-06-03T00:00:00Z"
+  },
+  {
+    "id": 15,
+    "name": "Microsoft Surface Pro 9",
+    "description": "Tablet Microsoft Surface Pro 9 con pantalla táctil de 13 pulgadas y procesador Intel Core i7.",
+    "price": 3334085,
+    "imgUrl": "/products/MicrosoftSurfacePro9.webp",
+    "category": "tablets",
+    "stock": 7,
+    "sold": 77,
+    "dateCreation": "2025-06-11T00:00:00Z"
+  },
+  {
+    "id": 16,
+    "name": "Marshall Stanmore II",
+    "description": "Altavoz Bluetooth Marshall Stanmore II con sonido potente y diseño clásico.",
+    "price": 1287108,
+    "imgUrl": "/products/MarshalStanmoreII.webp",
+    "category": "sonido",
+    "stock": 0,
+    "sold": 105,
+    "dateCreation": "2025-06-14T00:00:00Z"
+  },
+  {
+    "id": 17,
+    "name": "Kingston USB 1TB",
+    "description": "Pendrive Kingston DataTraveler Max de 1TB, USB 3.2 Gen 2 de alta velocidad.",
+    "price": 2222546,
+    "imgUrl": "/products/KingstonDataTravelerMax1TB.webp",
+    "category": "accesorios",
+    "stock": 12,
+    "sold": 68,
+    "dateCreation": "2025-06-16T00:00:00Z"
+  },
+  {
+    "id": 18,
+    "name": "Sony SRS-XB43",
+    "description": "Altavoz portátil Sony SRS-XB43 con Extra Bass y resistencia al agua IP67.",
+    "price": 2102078,
+    "imgUrl": "/products/SonySRSXB43.webp",
+    "category": "sonido",
+    "stock": 30,
+    "sold": 133,
+    "dateCreation": "2025-06-08T00:00:00Z"
+  },
+  {
+    "id": 19,
+    "name": "SanDisk Portable SSD 1TB",
+    "description": "Disco SSD portátil SanDisk Extreme de 1TB, resistente al agua y golpes.",
+    "price": 979768,
+    "imgUrl": "/products/SanDisk1TBExtremePortableSSD.webp",
+    "category": "accesorios",
+    "stock": 5,
+    "sold": 39,
+    "dateCreation": "2025-06-16T00:00:00Z"
+  },
+  {
+    "id": 20,
+    "name": "Logitech K380 Teclado Bluetooth",
+    "description": "Teclado inalámbrico Logitech K380, compacto y compatible con múltiples dispositivos.",
+    "price": 896805,
+    "imgUrl": "/products/LogitechK380.webp",
+    "category": "accesorios",
+    "stock": 18,
+    "sold": 88,
+    "dateCreation": "2025-06-05T00:00:00Z"
+  }
+]
