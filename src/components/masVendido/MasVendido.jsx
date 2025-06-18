@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { useSwipeable } from 'react-swipeable';
+import { useSwipeable } from "react-swipeable";
 import MasVendidos from "../../assets/products/products.json";
 import ProductCard from "../productCard/ProductCard";
 import "./masVendido.css";
 
-const MasVendido = () => {
+const MasVendido = ({ onAddToCart }) => {
   const [startIndex, setStartIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(
     window.innerWidth <= 768 ? 1 : 3
@@ -16,8 +16,8 @@ const MasVendido = () => {
       setItemsPerPage(window.innerWidth <= 768 ? 1 : 3);
       setStartIndex(0);
     };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const topVendidos = [...MasVendidos]
@@ -41,7 +41,7 @@ const MasVendido = () => {
     );
   }, [itemsPerPage, topVendidos.length]);
 
-    useEffect(() => {
+  useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
     }, 4000);
@@ -51,18 +51,14 @@ const MasVendido = () => {
   const swipeHandlers = useSwipeable({
     onSwipedLeft: () => handleNext(),
     onSwipedRight: () => handlePrev(),
-    trackMouse: true
+    trackMouse: true,
   });
 
   return (
     <>
       <h2>Productos Más Vendidos</h2>
       <section className="masVendido">
-        <div
-          className="slider-container"
-          ref={containerRef}
-          {...swipeHandlers}
-        >
+        <div className="slider-container" ref={containerRef} {...swipeHandlers}>
           <button
             className="button-product prev-product"
             onClick={handlePrev}
@@ -71,7 +67,11 @@ const MasVendido = () => {
             <img src="/l-arrow.svg" alt="Anterior" />
           </button>
           {visibleProducts.map((producto) => (
-            <ProductCard key={producto.id} producto={producto} />
+            <ProductCard
+              key={producto.id}
+              producto={producto}
+              onAdd={onAddToCart}
+            />
           ))}
           <button
             className="button-product next-product"

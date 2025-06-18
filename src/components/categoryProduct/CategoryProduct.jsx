@@ -14,7 +14,7 @@ const categoryNames = {
 
 const ITEMS_TO_SHOW = 8;
 
-const CategoryProduct = () => {
+const CategoryProduct = ({ onAddToCart }) => {
   const { categoria } = useParams();
   const [visibleCount, setVisibleCount] = useState(ITEMS_TO_SHOW);
 
@@ -38,7 +38,11 @@ const CategoryProduct = () => {
         <div className="categoryProducts">
           {visibleProducts.length > 0 ? (
             visibleProducts.map((producto) => (
-              <ProductCard key={producto.id} producto={producto} />
+              <ProductCard
+                key={producto.id}
+                producto={producto}
+                onAdd={onAddToCart}
+              />
             ))
           ) : (
             <p>No hay productos en esta categoría.</p>
