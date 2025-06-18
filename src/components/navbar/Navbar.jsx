@@ -62,6 +62,11 @@ export default function Navbar() {
       <div className="navbar_secondary">
         <ul className={`navbar_links${menuOpen ? " open" : ""}`} ref={menuRef}>
           <li>
+            <Link to="/" onClick={() => setMenuOpen(false)}>
+              <img className="homeIcon" src="/home.svg" alt="" />
+            </Link>
+          </li>
+          <li>
             <Link to="/celulares" onClick={() => setMenuOpen(false)}>
               Celulares
             </Link>
@@ -82,8 +87,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/servicios" onClick={() => setMenuOpen(false)}>
-              Servicios
+            <Link to="/contacto" onClick={() => setMenuOpen(false)}>
+              Contactanos
             </Link>
           </li>
         </ul>
