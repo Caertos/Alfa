@@ -16,7 +16,7 @@
 
 .bannerProduct {
   position: relative;
-  background-image: url(/public/productBanner.webp);
+  background-image: url(/productBanner.webp);
   background-size: cover;
   padding: 2vw 2vw;
   margin-bottom: 2vw;

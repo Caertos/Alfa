@@ -11,12 +11,12 @@ const Footer = () => {
         <ul>
           <li>Quienes Somos</li>
           <li>Servicios</li>
-          <li>
+{/*           <li>
             {" "}
             <a href="https://www.pixabit.com.co" className="pixabit" rel="nofollow">
               Desarrollado por Pixabit ®
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div>

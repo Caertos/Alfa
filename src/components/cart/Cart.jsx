@@ -14,14 +14,14 @@ const Cart = ({
       <div className="cart-backdrop" onClick={onClose} />
       <aside className="cart-panel">
         <div className="cart-title">
-        <h2>Mi Compra</h2>
-        <button
-          className="cart-close"
-          onClick={onClose}
-          aria-label="Cerrar carrito"
-        >
-          &times;
-        </button>
+          <h2>Mi Compra</h2>
+          <button
+            className="cart-close"
+            onClick={onClose}
+            aria-label="Cerrar carrito"
+          >
+            &times;
+          </button>
         </div>
         {Array.isArray(cartItems) && cartItems.length > 0 ? (
           <div className="cart-products">
@@ -39,6 +39,11 @@ const Cart = ({
         ) : (
           <div className="cart-empty">Tu carrito está vacío.</div>
         )}
+        <div className="cart-footer">
+          <button className="cart-buy-button" onClick={onClose}>
+            Comprar
+          </button>
+        </div>
       </aside>
     </div>
   );

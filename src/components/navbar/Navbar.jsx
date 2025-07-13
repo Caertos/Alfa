@@ -70,11 +70,11 @@ export default function Navbar({ onCartOpen }) {
             className={`navbar_links${menuOpen ? " open" : ""}`}
             ref={menuRef}
           >
-            <li>
+{/*             <li>
               <Link to="/" onClick={() => setMenuOpen(false)}>
                 <img className="homeIcon" src="/home.svg" alt="" />
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/celulares" onClick={() => setMenuOpen(false)}>
                 Celulares

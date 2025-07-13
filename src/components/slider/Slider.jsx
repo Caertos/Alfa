@@ -15,6 +15,8 @@ export default function Slider() {
         if(imgNode) {
                 imgNode.scrollIntoView({
                         behavior: "smooth",
+                        block: "nearest",
+                        inline: "center"
                 })
         }
     },[currentIndex])

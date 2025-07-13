@@ -6,6 +6,8 @@
   color: whitesmoke;
   padding: 2vw 5vw;
   text-align: left;
+  font-size: 1vw;
+  line-height: 2vw;
 
   @media screen and (max-width: 450px) {
     display: flex;

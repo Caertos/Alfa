@@ -37,6 +37,7 @@
 @media screen and (max-width: 768px) {
   .masVendido .slider-container span {
     width: 70%;
+    margin: 0 auto 0 auto;
   }
 }
 
