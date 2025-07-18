@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./navbarStyle.css";
 
-export default function Navbar({ onCartOpen }) {
+export default function Navbar({ onCartOpen, cartCount }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
@@ -50,6 +50,7 @@ export default function Navbar({ onCartOpen }) {
             </Link>
             <Link className="cart" onClick={onCartOpen}>
               <img src="/cart.svg" alt="Carrito" />
+              {cartCount > 0 && (<span className="cart-badge">{cartCount}</span>)}
             </Link>
           </div>
         </div>
@@ -70,11 +71,6 @@ export default function Navbar({ onCartOpen }) {
             className={`navbar_links${menuOpen ? " open" : ""}`}
             ref={menuRef}
           >
-{/*             <li>
-              <Link to="/" onClick={() => setMenuOpen(false)}>
-                <img className="homeIcon" src="/home.svg" alt="" />
-              </Link>
-            </li> */}
             <li>
               <Link to="/celulares" onClick={() => setMenuOpen(false)}>
                 Celulares

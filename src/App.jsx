@@ -13,6 +13,7 @@ import Navbar from "./components/navbar/Navbar";
 import CategoryProduct from "./components/categoryProduct/CategoryProduct";
 import Footer from "./components/footer/Footer";
 import Cart from "./components/cart/Cart";
+import Contact from "./components/contact/Contact";
 
 import "./App.css";
 
@@ -20,6 +21,8 @@ import "./App.css";
 function App() {
   const [cartItems, setCartItems] = useState([]);
   const [cartOpen, setCartOpen] = useState(false);
+
+  const totalCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
 
   const handleAddToCart = (product) =>
     setCartItems((prev) => addToCart(prev, product));
@@ -31,10 +34,10 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar onCartOpen={() => setCartOpen(true)}/>
+      <Navbar onCartOpen={() => setCartOpen(true)} cartCount={totalCount} />
       <Routes>
         <Route path="/" element={<Home onAddToCart={handleAddToCart}/>} />
-        <Route path="/contacto" element={"CONTACTANOS"} />
+        <Route path="/contacto" element={<Contact />} />
         <Route path="/:categoria" element={<CategoryProduct onAddToCart={handleAddToCart}/>} />
       </Routes>
             <Cart
