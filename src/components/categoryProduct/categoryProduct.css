@@ -46,3 +46,137 @@
   color: #1e1e1e;
 }
 
+.filters-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.5vw;
+  margin: 2vw 2vw;
+  flex-wrap: wrap;
+}
+
+.filter-item {
+  flex: 1;
+  min-width: 50px;
+  max-width: 50%;
+}
+
+.brand-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill {
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  border: 1px solid #555;
+  background: white;
+  color: #555;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  font-size: 0.9rem;
+}
+
+.pill:hover {
+  background: #eee;
+}
+
+.pill.active {
+  background: #77d423;
+  color: white;
+  border-color: #77d423;
+}
+
+.filter-item input[type="range"] {
+  width: 100%;
+  -webkit-appearance: none;
+  background: transparent;
+  margin-top: 0.25rem;
+}
+
+/* Track */
+.filter-item input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.filter-item input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #77d423;
+  margin-top: -5px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+
+/* Firefox */
+.filter-item input[type="range"]::-moz-range-track {
+  height: 6px;
+  background: #ddd;
+  border-radius: 3px;
+}
+.filter-item input[type="range"]::-moz-range-progress {
+  background: #77d423;
+  height: 6px;
+  border-radius: 3px;
+}
+.filter-item input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #77d423;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+
+/* IE */
+.filter-item input[type="range"]::-ms-track {
+  width: 100%;
+  height: 6px;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.filter-item input[type="range"]::-ms-fill-lower {
+  background: #77d423;
+  border-radius: 3px;
+}
+.filter-item input[type="range"]::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 3px;
+}
+.filter-item input[type="range"]::-ms-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #77d423;
+  border: none;
+  cursor: pointer;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .filters-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters-container .filter-item:nth-child(1) {
+    order: 1; 
+  }
+  .filters-container .filter-item:nth-child(2) {
+    order: 2;
+    margin-top: 0.5rem;;
+  }
+
+  .filter-item {
+    width: 100%;
+    max-width: none;
+  }
+}
