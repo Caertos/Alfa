@@ -40,6 +40,16 @@ const Cart = ({
           <div className="cart-empty">Tu carrito está vacío.</div>
         )}
         <div className="cart-footer">
+          <div className="cart-total">
+            <span>Total:</span>
+            <span>
+              ${" "}
+              {cartItems.reduce(
+                (total, item) => total + item.product.price * item.quantity,
+                0
+              )}
+            </span>
+          </div>
           <button className="cart-buy-button" onClick={onClose}>
             Comprar
           </button>
