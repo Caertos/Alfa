@@ -64,11 +64,11 @@
   align-items: center;
   justify-content: center;
 
-/*   @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     width: 6vw;
     height: 6vw;
     margin-left: 5px;
-  } */
+  }
 }
 
 .navbar_icons img {
