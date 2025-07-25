@@ -45,7 +45,7 @@ const Cart = ({
             <span>
               ${" "}
               {cartItems.reduce(
-                (total, item) => total + item.product.price * item.quantity,
+                (total, item) => (total + item.product.price * item.quantity).toLocaleString(),
                 0
               )}
             </span>

@@ -5,7 +5,7 @@ const ProductCard = ({ producto, onAdd }) => {
   return (
     <span className="product-card" key={producto.id}>
       <img src={producto.imgUrl} alt={producto.alt} className="product-image" />
-      <p className="price">$ {producto.price}</p>
+      <p className="price">$ {producto.price.toLocaleString()}</p>
       <p>{producto.name}</p>
       <a
         href="#"
