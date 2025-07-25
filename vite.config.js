@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: "pubic_html",
+    outDir: "public_html",
     emptyOutDir: true,
   },
 });
