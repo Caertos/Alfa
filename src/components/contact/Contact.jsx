@@ -43,7 +43,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div>
+        <div className="alfaContactWrapper">
           <img
             src="/alfaContact.webp"
             className="alfaContactImg"
